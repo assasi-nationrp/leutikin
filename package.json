@@ -1,0 +1,22 @@
+{
+  "name": "leutikin",
+  "author": {
+    "name": "huntzrahmadi",
+    "email": "huntzrahmadi@gmail.com"
+  },
+  "scripts": {
+    "dev": "bun index.js"
+  },
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cli-progress": "^3.11.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0"
+  }
+}
