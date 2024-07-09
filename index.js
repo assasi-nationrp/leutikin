@@ -1,6 +1,9 @@
 import * as cliProgress from "cli-progress";
 import { program } from "commander";
 import { version } from "./package.json";
+import { Glob } from "bun";
+
+const glob = new Glob("*");
 
 program
   .name("leutikin")
@@ -13,8 +16,11 @@ program
   .argument("<string>", "path to working directory")
   .option("--path", "display just the first substring")
   .action((str, options) => {
-    const limit = options.first ? 1 : undefined;
-    console.log(str.split(options.separator, limit));
+    console.log({ str, options });
+
+    for (const file of glob.scanSync(".")) {
+      console.log(file);
+    }
   });
 
 program.parse();

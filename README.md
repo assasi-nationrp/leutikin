@@ -29,4 +29,4 @@ The **FiveM Resource Minimizer** is a powerful tool designed to optimize and red
 ## Usage
 ```bash
 # Example command to minimize a resource file
-bun index.js
+bun index.js minify .
