@@ -1,20 +1,39 @@
-import * as cliProgress from "cli-progress"
+import * as cliProgress from "cli-progress";
+import { program } from "commander";
+import { version } from "./package.json";
+
+program
+  .name("leutikin")
+  .description("CLI to minify fiveM resources before deployment")
+  .version(version);
+
+program
+  .command("minify")
+  .description("Minify resources recursively")
+  .argument("<string>", "path to working directory")
+  .option("--path", "display just the first substring")
+  .action((str, options) => {
+    const limit = options.first ? 1 : undefined;
+    console.log(str.split(options.separator, limit));
+  });
+
+program.parse();
 
 // create a new progress bar instance and use shades_classic theme
-const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+// const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 
-// start the progress bar with a total value of 200 and start value of 0
-bar1.start(200, 0);
+// // start the progress bar with a total value of 200 and start value of 0
+// bar1.start(200, 0);
 
-// update the current value in your application..
-bar1.update(50);
-setTimeout(() => {
-}, 1000)
-bar1.update(100);
- setTimeout(() => {}, 1000)
-bar1.update(150);
- setTimeout(() => {}, 1000)
-bar1.update(200);
- setTimeout(() => {}, 1000)
-// stop the progress bar
-bar1.stop();
+// // update the current value in your application..
+// bar1.update(50);
+// setTimeout(() => {
+// }, 1000)
+// bar1.update(100);
+//  setTimeout(() => {}, 1000)
+// bar1.update(150);
+//  setTimeout(() => {}, 1000)
+// bar1.update(200);
+//  setTimeout(() => {}, 1000)
+// // stop the progress bar
+// bar1.stop();
