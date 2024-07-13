@@ -1,7 +1,7 @@
 # Leutikin
 
 ## Description
-The **FiveM Resource Minimizer** is a powerful tool designed to optimize and reduce the size of your FiveM resource files. By efficiently compressing and streamlining code, this tool can decrease the overall size of your FiveM resources by up to 36%, leading to faster load times and improved performance for your game server.
+The **Leutikin** is a powerful tool designed to optimize and reduce the size of your FiveM resource files. By efficiently compressing and streamlining code, this tool can decrease the overall size of your FiveM resources by up to 46%, leading to faster load times and improved performance for your game server.
 
 ## Features
 - **Code Compression**: Utilizes advanced algorithms to compress resource files without losing functionality.
