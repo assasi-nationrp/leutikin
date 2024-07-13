@@ -5,6 +5,7 @@
     "name": "huntzrahmadi",
     "email": "huntzrahmadi@gmail.com"
   },
+  "bin": "./index.js",
   "scripts": {
     "dev": "bun index.js"
   },
@@ -19,6 +20,8 @@
   },
   "dependencies": {
     "cli-progress": "^3.12.0",
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "directory-tree": "^3.5.1",
+    "vitest": "^2.0.1"
   }
 }
