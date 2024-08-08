@@ -15,18 +15,15 @@ The **Leutikin** is a powerful tool designed to optimize and reduce the size of 
 - **Efficiency**: Simplifies the process of optimizing resource files, saving time and effort for developers.
 
 ## Getting Started
-1. **Clone the Repository**:
+
+1. **Install Dependencies Globally**: Navigate to the project directory and run
     ```bash
-    git clone https://github.com/assasi-nationrp/leutikin
+    npm install -g leutikin
     ```
-2. **Install Dependencies**: Navigate to the project directory and run
-    ```bash
-    npm install
-    ```
-   (or the relevant package manager for your setup).
-3. **Optimize Resources**: Use the provided commands to minimize your FiveM resource files.
+2. **Optimize Resources**: Use the provided commands to minimize your FiveM resource files.
 
 ## Usage
 ```bash
 # Example command to minimize a resource file
-bun index.js minify .
+leutikin minify .
+```
